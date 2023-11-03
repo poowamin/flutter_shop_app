@@ -43,7 +43,7 @@ class ProductItem extends StatelessWidget {
               onPressed: () {
                 product.toggleFavoriteStatus(authData.token, authData.userId);
               },
-              color: Theme.of(context).accentColor,
+              color: Theme.of(context).colorScheme.secondary,
             ),
           ),
           title: Text(
@@ -72,7 +72,7 @@ class ProductItem extends StatelessWidget {
                 ),
               );
             },
-            color: Theme.of(context).accentColor,
+            color: Theme.of(context).colorScheme.secondary,
           ),
         ),
       ),
